@@ -5,31 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alpaca Image Generator</title>
     <link rel="stylesheet" href="/dist/style.css" />
+    <script
+      src="https://kit.fontawesome.com/34cc1d3744.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>ALPACA GENERATOR</h1>
-    <div class="alpaca">
-      <div class="alpaca__neck">
-        <img src="./images/neck/default.png" alt="alpaca-neck" />
+    <div class="alpaca container--pall">
+      <h1>ALPACA GENERATOR</h1>
+      <div class="alpaca__image">
+        <section class="alpaca__neck">
+          <img src="./images/neck/default.png" alt="alpaca-neck" />
+        </section>
+        <section class="alpaca__nose">
+          <img src="./images/nose.png" alt="alpaca-nose" />
+        </section>
+        <section class="alpaca__mouth">
+          <img src="./images/mouth/default.png" alt="" />
+        </section>
+        <section class="alpaca__eyes">
+          <img src="./images/eyes/default.png" alt="alpaca-eyes" />
+        </section>
+        <section class="alpaca__hair">
+          <img src="./images/hair/default.png" alt="alpaca-hair" />
+        </section>
+        <section class="alpaca__access">
+          <img src="./images/accessories/flower.png" alt="alpaca-accessories" />
+        </section>
+        <section class="alpaca__ears">
+          <img src="./images/ears/default.png" alt="alpaca-ears" />
+        </section>
+        <section class="alpaca__leg">
+          <img src="./images/leg/default.png" alt="alpaca-leg" />
+        </section>
+        <div class="alpaca__media">
+          <button class="button">
+            <i class="fa-solid fa-shuffle" style="color: #da3e3e"></i> Random
+          </button>
+          <button class="button">
+            <i class="fa-solid fa-download" style="color: #000000"></i> Download
+          </button>
+        </div>
       </div>
-      <div class="alpaca__nose">
-        <img src="./images/nose.png" alt="alpaca-nose" />
-      </div>
-      <div class="alpaca__eyes">
-        <img src="./images/eyes/default.png" alt="alpaca-eyes" />
-      </div>
-      <div class="alpaca__hair">
-        <img src="./images/hair/default.png" alt="alpaca-hair" />
-      </div>
-      <div class="alpaca__access">
-        <img src="./images/accessories/flower.png" alt="alpaca-accessories" />
-      </div>
-      <div class="alpaca__ears">
-        <img src="./images/ears/default.png" alt="alpaca-ears" />
-      </div>
-      <div class="alpaca__leg">
-        <img src="./images/leg/default.png" alt="alpaca-leg" />
-      </div>
+      
+      <div class="alpaca__side">
+        <div class="alpaca__options">
+          <h3>ACCESSORIZE THE ALPACA'S</h2>
+            <button class="button_opt">Hair</button>
+            <button class="button_opt">Ears</button>
+            <button class="button_opt">Eyes</button>
+            <button class="button_opt">Mouth</button>
+            <button class="button_opt">Neck</button>
+            <button class="button_opt">Leg</button>
+            <button class="button_opt">Accessories</button>
+            <button class="button_opt">Background</button>
+          </div>
+          
+          <div class="hair">
+            <h3>STYLE</h3>
+            <button class="button_opt">Default</button>
+            <button class="button_opt">Curls</button>
+            <button class="button_opt">Short</button>
+            <button class="button_opt">Bangs</button>
+            <button class="button_opt">Elegant</button>
+            <button class="button_opt">Quiff</button>
+          </div>
+        </div>
     </div>
   </body>
 </html>

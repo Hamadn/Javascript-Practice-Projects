@@ -1,24 +1,99 @@
+@use "../util/" as u;
 .alpaca {
-  background: url();
+  display: grid;
+  gap: 20px;
+
+  h1 {
+    font-family: u.$font-mon;
+    font-weight: 700;
+
+    @include u.breakpoint-up(medium) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  &__image {
+    background-image: url(/Alpaca_Image_Generator/images/backgrounds/blue60.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 24rem;
+    display: grid;
+    gap: 20px;
+  }
   &__neck {
-    position: relative;
+    position: absolute;
   }
   &__nose {
-    position: relative;
+    position: absolute;
+  }
+  &__mouth {
+    position: absolute;
   }
   &__eyes {
     position: relative;
+    z-index: 3;
   }
   &__hair {
-    position: relative;
+    position: absolute;
+    z-index: 2;
   }
   &__access {
-    position: relative;
+    position: absolute;
+    z-index: 2;
   }
   &__ears {
-    position: relative;
+    position: absolute;
+    z-index: 1;
   }
   &__leg {
-    position: relative;
+    position: absolute;
   }
+  &__media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-row-start: 2;
+  }
+
+  &__side {
+    display: grid;
+    gap: 25px;
+
+    @include u.breakpoint-up(medium) {
+      padding-left: 1.2rem;
+    }
+  }
+
+  &__options {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    gap: 10px;
+    margin-top: 4.375rem;
+
+    @include u.breakpoint-up(medium) {
+      margin-top: 0;
+    }
+    h3 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      font-weight: bold;
+      font-size: u.$font-sm;
+    }
+  }
+  .hair {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 10px;
+
+    h3 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      font-weight: bold;
+      font-size: u.$font-sm;
+    }
+  }
+}
+img {
+  width: 24rem;
 }

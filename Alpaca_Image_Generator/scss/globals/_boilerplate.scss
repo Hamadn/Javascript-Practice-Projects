@@ -7,6 +7,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
+  height: 100%;
 }
 
 /*Removing the default padding and margin from all the elements*/
@@ -20,8 +21,9 @@ html {
 
 /*Body Styles*/
 body {
+  height: 100%;
   display: grid;
-  place-items: center;
+  place-content: center;
   font-family: u.$font;
   font-size: u.$font-med;
   font-weight: 600;
@@ -66,40 +68,38 @@ body {
   }
 }
 
-.flex {
-  display: flex;
-
-  &-jc-sb {
-    justify-content: space-between;
-  }
-  &-jc-c {
-    justify-content: center;
-  }
-  &-ai-c {
-    align-items: center;
-  }
-  &-gap {
-    gap: 1.25rem;
-  }
-}
-
 /*Button styles to be used in the website**/
 .button {
-  padding: 1rem 1.875rem;
-  color: u.$white !important;
+  padding: 1rem 3.3rem;
+  color: u.$dark !important;
   background-color: transparent;
-  border-radius: 50px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  display: inline-block;
+  background-color: u.$white;
 }
 
-.button:hover {
+.button_opt {
+  padding: 1rem 1.875rem;
+  border: 2px solid u.$light-blue;
+  color: u.$light-blue !important;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.button:hover,
+.button_opt:hover {
   color: u.$dark-blue !important;
   border: 2px solid u.$dark-blue;
 }
 
-.button:active {
-  color: u.$white;
+.button:active,
+.button_opt:active {
+  color: u.$white !important;
   background: u.$dark-blue;
 }
